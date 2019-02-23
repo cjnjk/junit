@@ -13,21 +13,21 @@ public class CalculatorTest {
     public void setup(){
         
         calculator = new Calculator();
-        System.out.println("每个测试方法执行之前都会被调用......");
+        System.out.println("2");
     }
     @After
     public void release(){
-        System.out.println("每个测试方法执行之后都会被调用......");
+        System.out.println("3");
     }
     
     @BeforeClass
     public static void loadClass(){
 //      calculator = new Calculator();
-        System.out.println("跑此测试类所有方法前调用......");
+        System.out.println("1");
     }
     @AfterClass
     public static void releaseClass(){
-        System.out.println("跑此测试类所有方法之后调用......");
+        System.out.println("4");
     }
     
     @Test
